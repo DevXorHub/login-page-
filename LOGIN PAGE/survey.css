@@ -1,0 +1,114 @@
+/* Reset & basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  main {
+    background: white;
+    max-width: 480px;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+  
+  h1#title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  p#description {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  
+  form#survey-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  form#survey-form input[type="text"],
+  form#survey-form input[type="email"],
+  form#survey-form input[type="number"],
+  form#survey-form select,
+  form#survey-form textarea {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    border: 1.8px solid #bdc3c7;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  form#survey-form input[type="text"]:focus,
+  form#survey-form input[type="email"]:focus,
+  form#survey-form input[type="number"]:focus,
+  form#survey-form select:focus,
+  form#survey-form textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+  }
+  
+  fieldset {
+    border: 1px solid #dcdcdc;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  legend {
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+  }
+  
+  fieldset label {
+    display: inline-block;
+    margin-right: 1.25rem;
+    font-weight: normal;
+    color: #34495e;
+    cursor: pointer;
+  }
+  
+  button#submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  
+  button#submit:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 500px) {
+    main {
+      padding: 1.5rem 1.5rem;
+    }
+  }
+  
